@@ -1,0 +1,51 @@
+@import '../base';
+
+main {
+    padding: 2rem 0;
+
+    .container {
+        .title {
+            font-size: 2rem;
+            text-align: center;
+        }
+
+        .text {
+            margin-top: 1rem;
+            font-size: 1.05rem;
+            text-align: center;
+        }
+
+        .depoiments {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 20px;
+            width: 100%;
+            max-width: 700px;
+            margin: auto;
+            margin-top: 1.5rem;
+            
+            @media screen and (max-width:540px){
+                width: 90%;
+                grid-template-columns: 1fr;
+            }
+
+            .depoiment {
+                width: 100%;
+                height: 400px;
+                background: $color-primary;
+                border-radius: 0.5rem;
+            }
+        }
+
+        .depoiment__image {
+            width: 90%;
+            max-width: 650px;
+            margin: auto;
+            margin-top: 2rem;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}

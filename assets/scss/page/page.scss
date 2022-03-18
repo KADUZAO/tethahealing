@@ -1,0 +1,178 @@
+@import '../base';
+
+main {
+    .container1 {
+        .swiper {
+            margin-top: -1rem;
+
+            @media screen and (max-width:540px){
+                margin-top: -0.5rem;
+            }
+
+            .swiper-slide img {
+                @media screen and (max-width:540px){
+                    width: 140%;
+                }
+            }
+        }
+
+        .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+            @media screen and (max-width:540px){
+                bottom: 5px;
+            }
+        }
+    }
+
+    .container2 {
+        .container {
+            flex-direction: row;
+
+            @media screen and (max-width:540px){
+                flex-direction: column;
+            }
+
+            .container-left {
+                width: 49%;
+
+                @media screen and (max-width:540px){
+                    width: 90%;
+                    margin: auto;
+                    margin-top: 1rem;
+                }
+
+                .persona {
+                    width: 100%;
+
+                    img {
+                        width: 100%;
+                        transform: matrix(1.1,0,0,1.1,0,0);
+
+                        @media screen and (max-width:540px){
+                            transform: matrix(1,0,0,1,0,0);
+                        }
+                    }
+                }
+            }
+
+            .container-right {
+                width: 49%;
+
+                @media screen and (max-width:540px){
+                    width: 100%;
+                }
+
+                .title {
+                    font-size: 2rem;
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+    }
+
+    .container3 {
+        background: #f0f0f0;
+        margin-top: 4rem;
+        padding-bottom: 2rem;
+
+        .container {
+            .title {
+                font-size: 2rem;
+                text-align: center;
+                margin-top: -3rem;
+                color: $color-primary;
+            }
+
+            .content {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                width: 100%;
+                grid-gap: 40px;
+                max-width: 700px;
+                margin: auto;
+                margin-top: 1rem;
+
+                @media screen and (max-width:540px){
+                    width: 80%;
+                    grid-template-columns: 1fr;
+                }
+
+                .points {
+                    width: 100%;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    .container4 {
+        .container {
+            text-align: center;
+            margin-top: 2rem;
+            font-size: 2rem;
+
+            .depoiments {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-gap: 20px;
+                width: 100%;
+                max-width: 700px;
+                margin: auto;
+                margin-top: 1.5rem;
+                
+                @media screen and (max-width:540px){
+                    width: 90%;
+                    grid-template-columns: 1fr;
+                }
+
+                .depoiment {
+                    width: 100%;
+                    height: 400px;
+                    background: $color-primary;
+                    border-radius: 0.5rem;
+                }
+            }
+
+            .depoiment__image {
+                width: 90%;
+                max-width: 650px;
+                margin: auto;
+                margin-top: 2rem;
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .container5 {
+        background: #f0f0f0;
+        margin-top: 2rem;
+        padding-bottom: 2rem;
+
+        .container {
+            padding-top: 2rem;
+
+            .title {
+                text-align: center;
+                font-size: 1.25rem;
+                max-width: 700px;
+                margin: auto;
+            }
+
+            .formulario {
+                width: 90%;
+                max-width: 500px;
+                margin: auto;
+                margin-top: 1rem;
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
